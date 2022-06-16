@@ -2,7 +2,7 @@
 tasks:
   - name: start api
     init: echo 'init script' # runs during prebuild
-    before: gp async-wait multispace
+    before: gp sync-await multispace
     command: |
       pip install -r requirements.txt
       python api.py
