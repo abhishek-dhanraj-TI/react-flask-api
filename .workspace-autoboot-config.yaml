@@ -1,0 +1,13 @@
+ExecConfig:
+  Environment:
+    RANDOM_ENV: Devspace
+Endpoints:
+  TimeEndpoint:
+    Port: 5000
+    Protocol: HTTPS
+    Path: time
+DependsOn:
+  API:
+    Type: DEVSPACES::REPO::GIT
+    Properties:
+      RepoUrl: https://github.com/abhishek-dhanraj-TI/react-flask-api
