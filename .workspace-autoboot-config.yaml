@@ -7,7 +7,3 @@ Endpoints:
     Protocol: HTTPS
     Path: time
 DependsOn:
-  API:
-    Type: DEVSPACES::REPO::GIT
-    Properties:
-      RepoUrl: https://github.com/abhishek-dhanraj-TI/react-flask-api
