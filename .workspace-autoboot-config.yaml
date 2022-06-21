@@ -1,9 +1,9 @@
-ExecConfig:
-  Environment:
+execConfig:
+  environment:
     RANDOM_ENV: Devspace
-Endpoints:
+endpoints:
   TimeEndpoint:
-    Port: 5000
-    Protocol: HTTPS
-    Path: time
-DependsOn: []
+    port: 5000
+    protocol: HTTPS
+    path: time
+dependsOn: []
