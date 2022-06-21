@@ -6,4 +6,4 @@ Endpoints:
     Port: 5000
     Protocol: HTTPS
     Path: time
-DependsOn:
+DependsOn: []
