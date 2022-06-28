@@ -1,3 +1,4 @@
+name: React Flask API
 execConfig:
   environment:
     RANDOM_ENV: Devspace
