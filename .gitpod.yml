@@ -5,7 +5,7 @@ vscode:
 tasks:
   - name: start api
     init: echo 'init script' # runs during prebuild
-    before: gp sync-await multispace
+    before: gp sync-await multispace && source ~/.bashrc
     command: |
       pip install -r requirements.txt
       python api.py
