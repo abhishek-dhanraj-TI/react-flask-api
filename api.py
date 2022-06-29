@@ -1,18 +1,26 @@
 import time
 import mysql.connector
+import requests
+
 from flask import Flask
 from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+API2_TIME_URL = os.environ.get("API2_TIME_URL", None)
+print("API2 Time URL => ", API2_TIME_URL)
 
 @app.route('/')
 def hello_world():
   return 'Hello, Docker!'
 
-@app.route('/time')
+@app.route('/api-1-time')
 def get_current_time():
-    return {'time': time.time()} 
+    r = requests.get(url = API2_TIME_URL, params = PARAMS)
+    print("Response => ", r)
+    data = r.json()
+    print("Response.json : data => ", data)
+    return {'time': data['time']} 
     
 @app.route('/val')
 def get_val():
