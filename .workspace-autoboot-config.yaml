@@ -7,7 +7,7 @@ parameters:
   Password:
     descriptip: Its your password
     type: string
-    default: ****
+    default: 12345678
 execConfig:
   environment:
     RANDOM_ENV: Devspace
