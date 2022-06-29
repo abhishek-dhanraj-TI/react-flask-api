@@ -1,4 +1,13 @@
 name: React Flask API
+parameters:
+  UsernamePrefix:
+    description: Prefix to use for username
+    type: string
+    default: devsplacePlus
+  Password:
+    descriptip: Its your password
+    type: string
+    default: 12345678
 execConfig:
   environment:
     RANDOM_ENV: Devspace
