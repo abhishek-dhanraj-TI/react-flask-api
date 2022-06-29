@@ -10,7 +10,7 @@ CORS(app)
 def hello_world():
   return 'Hello, Docker!'
 
-@app.route('/time')
+@app.route('/api-2-time')
 def get_current_time():
     return {'time': time.time()} 
     
