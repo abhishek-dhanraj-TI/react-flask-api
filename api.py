@@ -1,6 +1,7 @@
 import time
 import mysql.connector
 import requests
+import os
 
 from flask import Flask
 from flask_cors import CORS
