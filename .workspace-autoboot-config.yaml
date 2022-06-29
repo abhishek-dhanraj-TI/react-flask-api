@@ -2,9 +2,17 @@ name: React Flask API
 execConfig:
   environment:
     RANDOM_ENV: Devspace
+    DB_HOST: ${DB.DBEndpoint.host}
+    DB_PORT: ${DB.DBEndpoint.port}
+    DB_USERNAME: root
+    DB_PASSWORD: p@ssw0rd1
 endpoints:
   TimeEndpoint:
     port: 5000
     protocol: HTTPS
     path: time
-dependsOn: []
+dependsOn:
+  DB:
+    type: DEVSPACES::REPO::GIT
+    properties:
+      repoUrl: https://github.com/trilogy-group/react-app-db/tree/ui-api-db
