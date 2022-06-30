@@ -17,7 +17,7 @@ def hello_world():
 
 @app.route('/api-1-time')
 def get_current_time():
-    r = requests.get(url = API2_TIME_URL, params = PARAMS)
+    r = requests.get(url = API2_TIME_URL)
     print("Response => ", r)
     data = r.json()
     print("Response.json : data => ", data)
