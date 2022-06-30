@@ -5,5 +5,5 @@ endpoints:
   TimeEndpoint:
     port: 5000
     protocol: HTTPS
-    path: api-1-time
+    path: api-2-time
 dependsOn: []
