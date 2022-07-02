@@ -5,7 +5,7 @@ parameters:
     type: string
     default: devsplacePlus
   Password:
-    descriptip: Its your password
+    description: Its your password
     type: string
     default: 12345678
 execConfig:
